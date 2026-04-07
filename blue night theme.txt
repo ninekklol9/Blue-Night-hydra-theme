@@ -1,0 +1,177 @@
+/*
+
+    Here you can edit CSS for your theme and apply it on Hydra.
+    There are a few classes already in place, you can use them to style the launch
+
+    If you want to learn more about how to run Hydra in dev mode (which will allow you to inspect the DOM and view the classes)
+    or how to publish your theme in the theme store, you can check the docs:
+    https://docs.hydralauncher.gg/
+  
+
+    Happy hacking!
+  */
+
+  /* Header */
+  .header {}
+
+  /* Sidebar */
+  .sidebar {}
+
+  /* Main content */
+  .container__content {}
+
+  /* Bottom panel */
+  .bottom-panel {}
+
+  /* Toast */
+  .toast {}
+
+  /* Button */
+  .button {}
+
+body {
+    margin: 0;
+    color: #0077ffff;
+    font-family: Arial, sans-serif;
+
+  }
+
+
+  #root {
+    background: #1a124aff
+      url("https://i.pinimg.com/originals/76/61/95/766195e0bfa2c663e4cc4256659c4cab.gif")
+      no-repeat center center;
+    background-size: cover;
+    }
+
+
+  .sidebar,
+  .header,
+  .container__content,
+  .bottom-panel {
+    background: transparent !important; 
+  }
+
+
+  .text-field-container__text-field--dark,
+  .text-field-container__text-field--primary,
+  .header__search,
+  .game-item,
+
+  .settings__content,
+  .catalogue__filters-container,
+  .friends-box__box,
+  .user-stats__box,
+  .recent-games__box,
+  .sidebar {
+
+    background-color: rgba(5, 69, 206, 0.25) !important;
+    
+
+    }
+
+  .container__content .button--outline {
+    backdrop-filter: blur(6px);
+    background-color: rgba(57, 16, 168, 0.25);
+  }
+
+
+  .settings-download-sources__item,
+  .download-group__item,
+  .game-item {
+    background-color: rgba(23, 116, 183, 0.25) !important;
+  }
+
+
+  .title-bar {
+    background-color: #2200ffff;
+  }
+
+
+  .home__content {
+    background-color: rgba(54, 8, 183, 0.25);
+    backdrop-filter: blur(2px);
+  }
+
+  .bottom-panel {
+    background-color: rgba(58, 16, 172, 0.52);
+    backdrop-filter: blur(3px);
+  }
+
+.achievement-notification {
+    background: transparent !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+.achievement-notification > div {
+    background-image: url('https://i.pinimg.com/1200x/39/a6/23/39a623a20b97d94188c6c4540fe14ecd.jpg') !important;
+    background-size: cover !important;
+    background-position: center !important;
+    background-color: transparent !important; 
+    
+    display: flex !important;
+    align-items: center !important;
+    padding: 15px !important;
+    min-width: 320px !important;
+    min-height: 85px !important;
+    border-radius: 8px !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9) !important;
+    
+    
+    position: relative !important; 
+    overflow: hidden !important;
+}
+
+.achievement-icon {
+    width: 50px !important;
+    height: 50px !important;
+    margin-right: 15px !important;
+    border-radius: 4px !important;
+    filter: grayscale(100%) contrast(1.1) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+}
+
+
+.achievement-text-container {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.achievement-title {
+    color: #ffffff !important;
+    font-size: 14px !important;
+    font-weight: bold !important;
+    text-shadow: 2px 2px 4px #000 !important; 
+}
+
+.achievement-description {
+    color: #e0e0e0 !important;
+    font-size: 11px !important;
+    text-shadow: 1px 1px 3px #000 !important;
+}
+
+
+.achievement-points {
+
+    position: absolute !important; 
+    
+    
+    top: 5px !important;    
+    right: 5px !important; 
+    
+   
+    font-size: 9px !important;
+    font-weight: 800 !important;
+    padding: 2px 6px !important;
+    border-radius: 4px !important;
+    
+    background: rgba(0, 0, 0, 0.8) !important; 
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+    color: #ffffff !important;
+    
+    z-index: 99 !important; 
+    text-shadow: none !important;
+}
